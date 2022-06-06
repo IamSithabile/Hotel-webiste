@@ -1,0 +1,42 @@
+.nav-container {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.logo {
+
+    width: 13%;
+
+    &__img {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+    &__items {}
+
+    &__item {
+        padding: 1rem 2rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: var(--white);
+        transform: translateY(-1px);
+        transition: all .2s;
+
+        &:hover {
+            font-weight: 700;
+            border-bottom: 1px solid var(--white);
+        }
+
+    }
+}

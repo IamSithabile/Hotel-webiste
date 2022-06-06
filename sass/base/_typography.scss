@@ -1,0 +1,35 @@
+body {
+    font-family: var(--font-montserrat);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.heading-primary {
+    font-size: 15rem;
+    font-family: var(--font-playfair);
+    line-height: 1;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: var(--white);
+
+}
+
+.heading-secondary {
+    font-size: 6rem;
+    font-family: var(--font-playfair);
+    line-height: 1;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.heading {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.header__paragraph {
+    color: var(--white);
+}

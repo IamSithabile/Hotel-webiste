@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root {
+
+    --primary-color: #14274a;
+    --secondary-color: #E0B973;
+    --white: #fff;
+    --black: #000;
+
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-playfair: 'Playfair Display', serif;
+
+    --shadow-1: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    --shadow-2: 0 1rem 2rem rgba(0, 0, 0, .2);
+    --shadow-3: 0 2rem 3rem rgba(0, 0, 0, .3);
+
+    --bg-gradient: linear-gradient(rgba(var(--primary-color), .5), rgba(var(--primary-color), .5)) --hero-image: url(img/image1.jpg);
+
+    --hero-image: url(/img/hero.jpg);
+    --image-1: url(img/image1.jpg);
+    --image-2: url(img/image1.jpg);
+
+
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: var(--font-montserrat);
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 160rem;
+    margin: 0 auto;
+    height: 100%;
+}
