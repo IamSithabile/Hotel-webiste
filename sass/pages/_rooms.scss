@@ -1,0 +1,21 @@
+.rooms {
+
+
+
+    padding: 10rem 5rem;
+    text-align: center;
+
+
+    &__paragraph {
+
+        margin: 4rem 0;
+    }
+
+
+
+    &__header {
+        background-image: linear-gradient(rgba(#14274a, .5), rgba(#14274a, .5)), var(--image-10);
+        background-size: cover;
+        background-position: center;
+    }
+}

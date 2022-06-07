@@ -49,4 +49,88 @@
             background-position: center;
         }
     }
+
+    &__rooms {
+        padding: 4rem 0;
+
+        &--description {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: -1;
+
+
+            &-text {
+                font-size: 4.8rem;
+                padding: 1rem 4rem;
+                font-weight: 700;
+                background-color: var(--primary-color);
+                color: var(--white);
+                text-transform: uppercase;
+                flex: 1;
+            }
+
+            &-details {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: var(--white);
+                padding: 8rem;
+                border: 1px solid var(--black);
+
+                p {
+                    position: relative;
+                }
+
+                p::before {
+                    content: "+";
+                    display: block;
+                    position: absolute;
+                    top: 3px;
+                    left: -20%;
+                    height: 3rem;
+                    width: 3rem;
+                    color: var(--white);
+                    border-radius: 50%;
+                    background-color: var(--secondary-color);
+                    text-align: center;
+
+                }
+
+            }
+
+        }
+
+        &--img {
+            width: 100%;
+            max-height: 80rem;
+            display: block;
+
+        }
+
+        &--1 {
+
+            background-image: linear-gradient(rgba(#14274a, .3), rgba(#14274a, .3));
+            position: relative;
+            z-index: 10;
+
+
+        }
+
+        &--2 {
+
+            background-image: linear-gradient(rgba(#14274a, .3), rgba(#14274a, .3));
+            position: relative;
+            z-index: 10;
+
+        }
+
+        &--3 {
+
+            background-image: linear-gradient(rgba(#14274a, .3), rgba(#14274a, .3));
+            position: relative;
+            z-index: 10;
+
+        }
+    }
 }
