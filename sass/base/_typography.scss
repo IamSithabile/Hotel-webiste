@@ -14,6 +14,11 @@ body {
     text-transform: uppercase;
     color: var(--white);
 
+    @include responsive(sm) {
+
+        font-size: 10rem;
+    }
+
 }
 
 .heading-secondary {
@@ -21,13 +26,29 @@ body {
     font-family: var(--font-playfair);
     line-height: 1;
     margin-top: 0;
-    text-transform: uppercase;
+
+
+}
+
+.header-secondary {
+    font-size: 6rem;
+    font-family: var(--font-playfair);
+    line-height: 1;
+    margin-top: 0;
     color: var(--white);
+    text-transform: uppercase;
+
+
 }
 
 .heading {
     color: var(--white);
     text-transform: uppercase;
+}
+
+h4 {
+    font-size: 3.6rem;
+    text-align: center;
 }
 
 .header__paragraph {

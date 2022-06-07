@@ -3,12 +3,21 @@
     outline: none;
     border: none;
     border-radius: 5px;
-    padding: 1em 1.5rem;
+    padding: 1rem 2.2rem;
     font-size: 1.7rem;
     color: var(--white);
     font-weight: 700;
 
     margin-bottom: 5rem;
+
+    &__submit,
+    &__submit:focus,
+    &__submit:active {
+        padding: .8rem 1.5rem;
+        // border-radius: 0;
+        transform: translateX(-9px);
+        color: var(--primary-color);
+    }
 
 
 

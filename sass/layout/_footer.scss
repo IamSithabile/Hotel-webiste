@@ -1,0 +1,126 @@
+.footer {
+
+    background-color: var(--primary-color);
+
+
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    grid-gap: 1rem;
+    justify-content: start;
+
+    @include responsive(sm) {
+        grid-template-columns: min-content;
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 2rem;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    &__details {
+
+        &--text {
+            color: var(--white);
+            font-size: 1.2rem;
+        }
+    }
+
+    &__nav {
+
+        &--item {}
+
+        &--link:link,
+        &--link:visited {
+            color: var(--white);
+            padding: 1rem;
+            display: inline-block;
+        }
+    }
+
+    &__social {
+
+        display: flex;
+        flex-direction: column;
+
+        &>* {
+            padding: 1rem;
+            color: var(--white);
+        }
+
+        &--facebook {
+            position: relative;
+
+
+        }
+
+        &--facebook::before {
+            content: "";
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            background-color: currentColor;
+            position: absolute;
+            top: 1.7rem;
+            left: -1.8rem;
+            mask: url(/img/fb.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+
+        }
+
+        &--instagram {
+            position: relative;
+        }
+
+        &--instagram::before {
+            content: "";
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            background-color: currentColor;
+            position: absolute;
+            top: 1.7rem;
+            left: -2.2rem;
+            mask: url(/img/instagram.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+
+        }
+
+        &--twitter {
+            position: relative;
+        }
+
+        &--twitter::before {
+            content: "";
+            display: block;
+            height: 2rem;
+            width: 2rem;
+            background-color: currentColor;
+            position: absolute;
+            top: 1.7rem;
+            left: -2.1rem;
+            mask: url(/img/twitter.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+
+        }
+    }
+
+    &__newsletter {
+
+        &--text {
+            color: var(--white);
+        }
+
+        &--email {
+            border: 1px solid var(--secondary-color);
+            background-color: var(--primary-color);
+            padding: 1rem;
+
+            &::-webkit-input-placeholder {
+                color: var(--white);
+            }
+        }
+    }
+}

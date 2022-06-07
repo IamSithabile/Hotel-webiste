@@ -1,0 +1,53 @@
+.about {
+
+    &__card {
+
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90%;
+        margin: 4rem auto;
+        align-items: center;
+        justify-content: space-between;
+
+        @include responsive(sm) {
+
+            flex-direction: column;
+            margin: 8rem auto;
+        }
+
+
+
+    }
+
+    &__image {
+        flex: 0 0 50%;
+
+
+        &-1 {
+            width: 100%;
+            display: block;
+        }
+
+        &-2 {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__content {
+        flex: 0 0 40%;
+        border-left: 3px solid rgba(0, 0, 0, .2);
+        padding: 0 3rem;
+
+        @include responsive(sm) {
+
+            border: none;
+            margin-top: 4rem;
+        }
+
+        &>* {
+            margin-bottom: 2rem;
+
+        }
+    }
+}
